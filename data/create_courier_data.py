@@ -3,9 +3,10 @@ from base import Base
 
 class CreateCourier:
 
-    login = Base.generate_random_word(10)
-    password = Base.generate_random_word(10)
-    first_name = Base.generate_random_word(10)
+    method = Base()
+    login = method.generate_random_word(10)
+    password = method.generate_random_word(10)
+    first_name = method.generate_random_word(10)
 
 
     courier_new = {

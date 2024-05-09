@@ -3,7 +3,8 @@ from base import Base
 
 class LoginData:
 
-    login_pasword = Base.register_new_courier_and_return_login_password()
+    method = Base()
+    login_pasword = method.register_new_courier_and_return_login_password()
 
     lodin_courier = {
         'login': login_pasword[0],
